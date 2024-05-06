@@ -17,7 +17,7 @@
     left: 50%;
 }
 .read_More .read-card {
-    width: 17rem;
+    width: 100%;
     border: none;
     color: white !important;
     transition: 0.5s !important;
@@ -27,7 +27,7 @@
     top: -5px; 
 }
 .read_More .read-card .read-body {
-    background: var(--color-two);
+    background: linear-gradient(to right, #1300D2, #7B10A0, #1300D2);
     text-align: center;
     position: relative;
     padding: 50px 0px;
@@ -41,10 +41,19 @@
     border-radius: 88px;
     border: none;
     padding: 5px 40px;
-    background: var(--color-two);   
+    background: linear-gradient(to right, #1300D2, #7B10A0, #1300D2);   
     transition: 0.5s;
 }
 
 .read-button:hover {
    padding: 5px 35px;
+}
+.read-res {
+    padding: 60px 0px !important;
+}
+@media (max-width:992px) {
+    .read_More {
+        justify-content: center;
+    }
+    
 }
