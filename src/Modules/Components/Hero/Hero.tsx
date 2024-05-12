@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import './Hero.css';
+import './Hero.css'
 
 interface HeroProps {
     img: string;
