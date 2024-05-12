@@ -17,14 +17,10 @@ const Dashboard: React.FC = () => {
 
     return (
         <>
-        <div className="dash-container">
         <div className="dashboard">
-            <TopBar />
+            <SideBar />
+            <div className="container">
             </div>
-            <div className="Side">
-                <SideBar />
-            </div>
-            <p>To Show, Create, And Delete  Projects and sShow All Messages</p>
             </div>
         </>
     );

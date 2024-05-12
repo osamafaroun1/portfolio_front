@@ -1,18 +1,19 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import './SideBar.css';
+import {Link } from 'react-router-dom';
 
-interface Props {}
 
-const SideBar: React.FC<Props> = () => {
+const SideBar: React.FC = () => {
     return (
-        <div className="sidebar-container">
-            <NavLink to="/projects">
-                Projects
-            </NavLink>
-            <NavLink to="/messages">
-                Messages
-            </NavLink>
+    <div className="sidebar">
+            <img src="./logo.png" alt="" />
+        <ul>
+            <li> <Link to= "/Projects">Projects</Link></li>
+            <li> <Link to= "/Messages">Messages</Link></li>
+            <li></li>
+
+        </ul>
+
         </div>
     );
 };
