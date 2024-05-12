@@ -1,0 +1,38 @@
+
+.projects {
+    display:flex;
+
+}
+.projects .container{
+width: 80vw;
+height: 100vh;
+padding:100px 50px 0 50px;
+
+}
+
+.projects .container .header{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.projects table{
+    width: 100%; 
+}
+.projects table th, .projects table td{
+    width: 19%;
+    text-align: center;
+}
+
+.projects img{
+    width: 100px;
+}
+
+.projects .header a{
+    padding: 15px;
+    background: linear-gradient(to right, rgba(19, 0, 210, 1), rgba(123, 16, 160, 1));
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+
+}
