@@ -1,11 +1,27 @@
 .addprojects{
     display:flex;
 }
-
-.addprojects input{
+.addprojects input, .addprojects label{
     display: block;
     width: 50%;
     height: 30px;
     margin: 50px auto;
+    border: 2px solid rgba(123, 16, 160, 1);
+    border-radius:7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -ms-border-radius:7px;
+    -o-border-radius:7px;
+}
+
+.addprojects #image{
+    display: none;
+
+}
+.addprojects label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
 }

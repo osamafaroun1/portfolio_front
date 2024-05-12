@@ -2,8 +2,19 @@ import SideBar from '../../Components/SideBar/SideBar';
 import React from 'react';
 import {Link } from 'react-router-dom';
 import './Projects.css';
+import {useEffect} from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const Projects:  React.FC = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => { 
+        localStorage.setItem("token","test")
+        if(!localStorage.getItem("token")) {
+        navigate("/login");
+        }
+    }, []);
     const data = [{id:1,name:" first project" ,img: "./assets/"},
 { id:2,name:" second project" ,img: "./assets/" },
 {id:3,name:" third project" ,img: "./assets/" }
