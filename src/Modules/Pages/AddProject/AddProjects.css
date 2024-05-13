@@ -1,0 +1,11 @@
+.addprojects{
+    display:flex;
+}
+
+.addprojects input{
+    display: block;
+    width: 50%;
+    height: 30px;
+    margin: 50px auto;
+
+}

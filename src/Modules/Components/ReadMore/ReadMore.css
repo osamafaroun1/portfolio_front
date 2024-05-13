@@ -1,0 +1,61 @@
+.read_More { 
+    position: relative;
+     gap: 10px 0;
+     animation: fed 0.5s ease-in forwards; 
+}
+.read_More .read-icon {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #222;
+}
+
+.read_More .read-icon2 {
+    left: 50%;
+    color: #222;
+}
+.read_More .read-card {
+    width: 100%;
+    border: none;
+    color: #222 !important;
+    transition: 0.5s !important;
+}
+
+.read_More .read-card:hover {
+    top: -5px; 
+}
+.read_More .read-card .read-body {
+    background: linear-gradient(to right, #1300D2, #7B10A0, #1300D2);
+    text-align: center;
+    position: relative;
+    padding: 50px 0px;
+    
+}
+
+.read-button {
+    color: white;
+    margin: 20px auto;
+    display: block;
+    border-radius: 88px;
+    border: none;
+    padding: 5px 40px;
+    background: linear-gradient(to right, #1300D2, #7B10A0, #1300D2);   
+    transition: 0.5s;
+}
+
+.read-button:hover {
+   padding: 5px 35px;
+}
+.read-res {
+    padding: 60px 0px !important;
+}
+@media (max-width:992px) {
+    .read_More {
+        justify-content: center;
+    }
+    
+}

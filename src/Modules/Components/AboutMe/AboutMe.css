@@ -1,0 +1,120 @@
+.about-color{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+.about {
+    gap: 50px;
+    justify-content: flex-end;
+    position: relative;
+    animation: fed 0.5s ease-in forwards;
+    /* padding: 120px 0px; */
+}
+.about_img{
+    position: relative;
+    width: 15rem;
+    height: 25rem;
+    background: linear-gradient(to right, #1300D2, #7B10A0, #1300D2) ;
+    border-radius: 15px;
+}
+.about_img::after , .about_img::before{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    border-radius: 10px;
+}
+.about_img::before{
+  transform: rotate(60deg);
+}
+.about_img::after{ 
+    transform: rotate(-60deg);
+}
+.about_img img {
+    height: 30rem;
+    z-index: 1;
+    left: -15px;
+    top: -80px;
+    position: absolute;
+}
+
+.about-content {
+    color: #222;
+}
+.about-content h1 {
+    font-weight: bold;
+    font-size: 65px;
+}
+.about-content h3{
+    font-weight: 700;
+}
+.about-content p{
+    padding: 20px 0;
+}
+.about-content button{
+    color: white;
+    border-radius: 88px;
+    border: none;
+    padding: 10px 40px;
+    background: linear-gradient(to right, #1300D2, #7B10A0, #1300D2) ;   
+    transition: 0.5s;
+}
+.about-content button:hover {
+    padding: 10px 35px;
+    
+}
+
+@keyframes fed {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .about {
+        font-size: 13px;
+    }
+    .about_img {
+        width: 10rem;
+        height: 17rem;
+    }
+    .about_img img {
+        height: 22rem;
+    }
+}
+@media (max-width: 767px) {
+    .about {
+        gap: 0px;
+    }
+    .about_img {
+        width: 6rem;
+        height: 10rem;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+    .about_img img{
+        height: 13rem;
+        top: -48px;
+        left: -12px;
+    }
+    .about-content {
+        text-align: center;
+    }
+    .about-content h1 {
+        font-size: 45px;
+    }
+    .about-content h3 {
+        font-size: 19px;
+    }
+    .about-content p {
+        padding: 10px 0px;
+    }
+}

@@ -1,0 +1,29 @@
+.sidebar{
+    width:20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    background: linear-gradient(to right, rgba(19, 0, 210, 1), rgba(123, 16, 160, 1));
+
+
+}
+.sidebar img{
+    width: 150px;
+
+}
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+}
+.sidebar li, .sidebar a{
+    color: black;
+    font-weight: 600;
+}
