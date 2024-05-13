@@ -1,0 +1,68 @@
+.container{
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100vmax;
+
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+.d-flex h1{
+    margin-lef.container{
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100vmax;
+
+}
+.d-flex{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 50px;
+
+
+}
+.d-flex h1{
+    margin-left: 200px;
+}
+button{
+    background: linear-gradient(to right, rgba(19, 0, 210, 1), rgba(123, 16, 160, 1));
+    border-radius: 5px;
+    height: 60px;
+    width:150px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}t: 200px;
+}
+button{
+    background: linear-gradient(to right, rgba(19, 0, 210, 1), rgba(123, 16, 160, 1));
+    border-radius: 5px;
+    height: 60px;
+    width:150px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}

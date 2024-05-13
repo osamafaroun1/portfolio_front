@@ -1,5 +1,9 @@
 .about-color{
+<<<<<<< HEAD
     background-color: #121212;
+=======
+
+>>>>>>> aya
     height: 100%;
     display: flex;
     justify-content: center;
@@ -43,7 +47,11 @@
 }
 
 .about-content {
+<<<<<<< HEAD
     color: white;
+=======
+    color: #222;
+>>>>>>> aya
 }
 .about-content h1 {
     font-weight: bold;

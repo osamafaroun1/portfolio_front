@@ -1,6 +1,4 @@
-*{
-background-color: aliceblue;
-}
+
 
 input[type="text"]:focus,input[type="email"]:focus{
     box-shadow: none;
@@ -18,9 +16,11 @@ input[type="submit"]:hover{
     background-color: rgb(124, 124, 218);
     color: white;
 }
+
 #contact{
 :root{
     --black : #121212;
     --color-two: linear-gradient(to right, #1300D2, #7B10A0, #1300D2);
 }
+
 }

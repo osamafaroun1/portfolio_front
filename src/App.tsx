@@ -1,19 +1,18 @@
 
-
 import './App.css'
-// import { Contact } from './Modules/Components/Contact/Contact'
-
 import { Route, Routes } from "react-router-dom"
+import { Login } from './Modules/Pages/Login'
+import Home from './Modules/Pages/Home/Home'
+import NavBar from './Modules/Components/NavBar/NavBar'
 
 function App() {
   return (
     <div>
-  <Routes>
-    <Route path="/" element=''></Route>
-    <Route path="/login" element=''></Route>
-  </Routes>
+      <NavBar/>
+ <Routes>
+    <Route path="/" element={<Home/>}></Route>
+    <Route path="/login" element={<Login/>}></Route>
+</Routes>
     </div>
-  )
-
-}
+)}
 export default App
