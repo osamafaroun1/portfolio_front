@@ -1,0 +1,123 @@
+.container {
+    /* height: 100%; */
+    margin-left: 3rem;
+    padding: 0 1rem;
+}
+.heroHight {
+    height: 100vh;
+}
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 200px;
+}
+
+.background-box {
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 19px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -o-border-radius: 19px;
+}
+.square1 {
+    position: absolute;
+    max-width: 50%;
+    margin-top: 10rem;
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(to right, rgba(19, 0, 210, 1), rgba(123, 16, 160, 1));
+    z-index: -1;
+}
+
+.square2 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 170px;
+    left: 800px;
+    transform: rotate(33.48deg);
+    -webkit-transform: rotate(33.48deg);
+    -moz-transform: rotate(33.48deg);
+    -ms-transform: rotate(33.48deg);
+    -o-transform: rotate(33.48deg);
+    z-index: -1;
+    border: 1px solid linear-gradient(to right, rgba(19, 0, 210, 1), rgba(123, 16, 160, 1));
+}
+
+
+.hero img {
+    max-width: 50%;
+    margin-top: 10rem;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.info {
+    margin-left: -10rem;
+}
+
+.info h5 {
+    background: linear-gradient(to right, rgba(19, 0, 210, 1), rgba(123, 16, 160, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.info h1 {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.info p {
+    font-weight: 100px;
+    color: gray;
+}
+
+.info button {
+    background: linear-gradient(to right, rgba(19, 0, 210, 1), rgba(123, 16, 160, 1));
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .background-box {
+        position: relative;
+        margin: auto;
+        z-index: 1;
+        margin-top: 5rem
+    }
+    
+    .hero img {
+        position: relative;
+        margin-top: -67.5rem;
+        z-index: 2; /* زيادة الـ z-index لوضع الصورة فوق المربع الملون */
+    }
+
+    .info {
+        margin-left: 0;
+        margin-top: -10rem; /* إضافة هامش للنص لتحسين التنسيق */
+        z-index: 2; /* زيادة الـ z-index لوضع النص فوق الصورة */
+    }
+}

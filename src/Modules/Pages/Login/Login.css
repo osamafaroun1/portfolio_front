@@ -1,0 +1,65 @@
+.login{
+    height: 100vh;
+    background: linear-gradient(to right, rgba(19, 0, 210, 1), rgba(123, 16, 160, 1));
+    position:relative;
+    height: 100vh;
+}
+
+.login form{
+    width: 25%;
+    height: 80%;
+    background-color: white;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    position: absolute;
+    Top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display:flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    gap: 20px;
+}
+.login form img{
+    width:200px;
+    
+}
+.login form input{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.login input[type=submit]{
+    background: rgba(123, 16, 160, 1);
+    border-radius: 10px;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+}
+.login input[type=submit]:hover{
+    border: 1px solid rgba(123, 16, 160, 1);
+    background: none;
+    color: black;
+}
+
+.logInput {
+    outline: none;
+    border-radius: 30px !important;
+    border: 1px solid rgba(123, 16, 160, 1) !important;
+    padding-left: 10px !important;
+}

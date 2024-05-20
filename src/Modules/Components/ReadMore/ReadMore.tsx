@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import './ReadMore.css'
 import { data } from './read';
-import { TAboutProps } from '../AboutMe/AbouteMe';
+import { TAboutProps } from '../AboutMe/AboutMe';
 import { Col, Container, Row } from 'react-bootstrap';
 
 const ReadMore:React.FC<TAboutProps> = ({onSwitch}) => {

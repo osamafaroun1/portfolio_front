@@ -1,14 +1,13 @@
 import {Col, Container, Row} from 'react-bootstrap'
-import person from "./../assets/person-removebg-preview.png";
+import person from "../assetss/person-removebg-preview.png";
 import './AboutMe.css'
+import React from 'react';
 
 export type TAboutProps = {
   onSwitch : ()=> void
 }
 
 const AbouteMe:React.FC<TAboutProps> = ({onSwitch}) => {
-
-  
   return (
     <div className='about-color'>
     <Container>
