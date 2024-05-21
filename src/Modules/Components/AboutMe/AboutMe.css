@@ -1,20 +1,21 @@
 .about-color{
-<<<<<<< HEAD
     background-color: #121212;
-=======
-
->>>>>>> aya
     height: 100%;
+    color: white;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0px;
+    /* padding: 100px 0px 0px ; */
+    background-color: #121212 ;
 }
 .about {
     gap: 50px;
     justify-content: flex-end;
     position: relative;
     animation: fed 0.5s ease-in forwards;
+    top: 50%;
+    /* transform: translateY(-50%); */
     /* padding: 120px 0px; */
 }
 .about_img{
@@ -45,14 +46,15 @@
     top: -80px;
     position: absolute;
 }
-
 .about-content {
-<<<<<<< HEAD
+
     color: white;
-=======
+
     color: #222;
->>>>>>> aya
 }
+
+
+
 .about-content h1 {
     font-weight: bold;
     font-size: 65px;

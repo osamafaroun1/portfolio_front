@@ -27,10 +27,9 @@ return (
         ))}
         </Row>
         <button className='read-button' onClick={onSwitch}>Back</button>
-          
+        <button className='read-button' onClick={onSwitch}>Back</button>
      </Container>
     </div>
   )
 }
-
 export default ReadMore

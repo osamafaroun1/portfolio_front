@@ -11,7 +11,8 @@ interface HeroProps {
 
 const Hero: FunctionComponent<HeroProps> = ({ img, title1, title2, desc, btn1 }) => {
     return (
-        <div className="container">
+     <div className="container">
+        <div className="container heroHight">
             <div className="hero">
                 <div className="background-box square1"></div>
                 <div className="background-box square2"></div>
@@ -24,7 +25,7 @@ const Hero: FunctionComponent<HeroProps> = ({ img, title1, title2, desc, btn1 })
                 </div>
             </div>
         </div>
-    );
-};
+    </div>
+) }
 
 export default Hero;

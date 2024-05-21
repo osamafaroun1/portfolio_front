@@ -1,7 +1,10 @@
 .read_More { 
     position: relative;
      gap: 10px 0;
-     animation: fed 0.5s ease-in forwards; 
+     animation: fed 0.5s ease-in forwards;  
+    position: relative;
+    top: 50%;
+
 }
 .read_More .read-icon {
     color: white;
@@ -37,12 +40,14 @@
 }
 
 .read-button {
+    width: 10% !important;
     color: white;
     margin: 20px auto;
     display: block;
     border-radius: 88px;
     border: none;
     padding: 5px 40px;
+    padding: 5px 40px !important;
     background: linear-gradient(to right, #1300D2, #7B10A0, #1300D2);   
     transition: 0.5s;
 }
@@ -52,7 +57,12 @@
 }
 .read-res {
     padding: 60px 0px !important;
+   padding: 5px 35px !important;
+   width: 9% !important;
 }
+/* .read-res {
+    padding: 60px 0px !important;
+} */
 @media (max-width:992px) {
     .read_More {
         justify-content: center;

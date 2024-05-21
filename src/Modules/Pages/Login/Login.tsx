@@ -1,34 +1,50 @@
-import { useState } from 'react';
-import axios from 'axios';
-import './LogIn.css';
-
+import './Login.css';
+import Header from '../../Components/Header/Header';
 const LogIn: React.FC = () => {
-    const [email, setemail] = useState();
-    const [password, setpassword] = useState();
-    const sendData = (event: any) => {
-        event.preventDefault();
-    /* fetch("api", {
-            method: "POST",
-            body: JSON.stringify({"email": email , "password": password})
-        }).then(res => res.json())
-        .then(res => console.log(res))
-        */
-    axios.post("api",{"email": email , "password": password})
-    .then( (res :any) => console.log(res));
-    }
+  const API_URL = 'http://127.0.0.1:8000/api/register';
+        
+
+    const [email, setemail]:any = useState('');
+    const [password , setpassword]:any = useState('');
+
+    const handleLogin = async () => {
+        try {
+          const response = await axios.post(API_URL, {
+            email,
+            password
+          });
+
+          if (response.data.accessToken) {
+            localStorage.setItem('user', JSON.stringify(response.data));
+            console.log('ok')
+          }
+          else {
+              console.log('فشل تسجيل الدخول')
+          }
+      
+        } catch (error:any) {
+      console.error('Login error', error.response);
+       }
+     }
     return (
         <>
+        <Header/>
         <div className="login"> 
-        <form onSubmit={()=>sendData(event)}>
+        <form>
             <img src="./logo.png" alt="" />
-            <input type="text" placeholder="email" onChange={(event)=>setemail(event.target.value)} />
-            <input type="password" placeholder="password" onChange={(event)=>setpassword(event.target.value)} />
-            <input type="submit" value="login" />
-
+            <input
+              type="text" 
+              className='logInput'
+              placeholder="email" 
+              onChange={(event)=>setemail(event.target.value)} />
+            <input type="password" 
+             className='logInput'
+             placeholder="password" 
+             onChange={(event)=>setpassword(event.target.value)} />
+            <input  type='submit' value="login" onClick={handleLogin} />
         </form>
         </div>
         </>
     );
-
 }
 export default LogIn;

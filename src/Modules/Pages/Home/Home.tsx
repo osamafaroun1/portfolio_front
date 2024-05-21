@@ -1,16 +1,25 @@
-import { FunctionComponent } from 'react';
-import img1 from '../../../assets/Hero.png'
-import Hero from '../../Components/Hero/Hero';
 
-const Home: FunctionComponent = () => {
-return (
-    <Hero 
-    img={img1}
-    title1=" Software Engineering "
-    title2 =" looking For a FullStack developer"
-    desc= " i have experience in React and Laravel"
-    btn1= " DownLoad Cv "
-/>);
-};
+// import React, { useEffect, useState } from 'react'
+// import NavBar from '../../Components/NavBar/NavBar'
+import ShowHero from '../ShowHero/ShowHero'
+import ShowAboutMe from '../ShowAboutMe/ShowAboutMe'
+import MyProject from '../../Components/MyProject/MyProject'
+import { Contact } from '../../Components/Contact/Contact'
+import Footer from '../../Components/Footer/Footer'
+import './Home.css'
+import NavBar from '../../Components/NavBar/NavBar'
 
-export default Home;
+export const Home = () => {
+
+  return (
+    <div>
+      <NavBar/>
+      <ShowHero/>
+      <ShowAboutMe/>
+      <MyProject/>
+      <Contact/>
+      <Footer/>
+    </div>
+  )
+// export default Home
+}

@@ -25,8 +25,8 @@ return (
              </Card>
             </Col>
         ))}
-        </Row>
         <button className='read-button' onClick={onSwitch}>Back</button>
+        </Row>
           
      </Container>
     </div>

@@ -6,9 +6,8 @@ const ShowAboutMe = () => {
     const switchComponent = () => {
     setShowFirstComponent(!showFirstComponent)
    }
-
   return (
-    <div>
+    <div >
         {
     showFirstComponent?(<AbouteMe onSwitch={switchComponent}/>):(<ReadMore onSwitch={switchComponent}/>)
     }
